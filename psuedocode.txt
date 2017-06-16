@@ -1,0 +1,17 @@
+
+http://code.wikia.com/wiki/Printf
+
+# read in the variadic list of variables - these are what will be pasted into the
+	print string.
+
+# read a character at a time from the format-string.
+	# if you encounter a placeholder (one %, not two)
+		# read following character(s) and compare it to the list of characters
+			in your array of structs.
+		(it's more complicated for the extra credit stuff where there can be multiple
+		characters that specify formatting)
+		deal with multiple consecutive %'s eventually
+		#??? pass counter as a pointer to op_code functions
+	# for each printable character, increment line counter
+
+if in doubt test the functionality of the real printf to see how it should work
