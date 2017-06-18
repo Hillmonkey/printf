@@ -1,31 +1,48 @@
 #include "holberton.h"
 
 /**
+ * _strdup - make a copy of a string
+ * @src: source string
+ * @dest: destination string
+ **/
+char *_strdup(char *src, char *dest)
+{
+	char *tmp;
+
+	tmp = dest;
+	while (*dest++ = *src++)
+		;
+	return(tmp);
+} 
+
+/**
  * init_params - initialize all elements of a param struct
  *
  **/
-int init_params(params_t *params, const char *format, op_t **ops)
+int init_params(params_t *p, const char *format, op_t *ops[], va_list valist)
 {
-	params->dex = 0;
-	params->counter = 0;
-	_strdup(format, params->format);
-	va_start(params->valist, params->format);
+	p->dex = 0;
+	p->counter = 0;
+	/* _strdup(format, p->format); */
+	va_copy(p->valist, valist);
+	va_start(p->valist, p->format);
 	
 }
 /**
  * choose_op - pick an op function and return it
- * @params: struct of parameters
- * @dex: index into format string
+ * @p: struct of parameters
+ * Return: int (success?)
  **/
 int choose_op(params_t *p)
 {
 	int j = 0;
 
-	while (ops[j].f)
+	printf("%s", p->ops[j].op);
+	while (p->(ops[j].f))
 	{
-		if (ops[j].op[0] == format[p->dex])
+		if (p->ops[j].op[0] == p->format[p->dex])
 		{
-			ops[j].f(p->valist);
+			p->ops[j].f(p->valist);
 			break;
 		}
 		j++;

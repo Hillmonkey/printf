@@ -9,7 +9,7 @@
 void _printf(const char *format, ...)
 {
 	int i = 0, dex = 0, j;
-	params_t *p;
+	params_t p;
 	op_t ops[] = {
 		{"c", op_char},
 		{"i", op_int},
@@ -19,30 +19,17 @@ void _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 
-	/* init params */
-	init_params(p, format, &ops);
-	while (p->format[p->dex])
+	va_start valist; /* past this point, only use p->valist */
+	init_params(&p, format, &ops, valist);
+	while (p.format[p.dex])
 	{
-		if (p->format[p->dex] == '%')
+		if (p.format[p.dex] == '%')
 		{
-			/* check params function here ... */
-			choose_op(p);
-			/*
-			j = 0;
-			while (ops[j].f)
-			{
-				if (ops[j].op[0] == format[i])
-				{
-					printf("%s", sep);
-					sep = ", ";
-					ops[j].f(valist);
-					break;
-				}
-				j++;
-			}
-			*/
+			choose_op(&p);
 		}
-		p->dex++;
+		p.dex++;
 	}
 	printf("\n");
+	va_end(valist);
+	va_end(p.valist);
 }
