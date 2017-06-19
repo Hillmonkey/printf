@@ -1,0 +1,20 @@
+.TH man 2 "18 June 2017" "Jeffrey and Larry's printf project"
+.SH NAME
+.B printf - format and print data
+.SH SYNOPSIS
+.B #include "holberton.h"
+.SH DESCRIPTION
+Function produces standard output accoding to format below
+.B printf("%", variable)
+.SH OPTIONS
+%c - prints char to standard output
+%s - prints string to standard output
+%i - prints signed integer to standard output
+%d - prints signed decimal to standard output
+%r - prints revered string to standard output
+%f - prints floating-point number to standard output
+%n - prints the number of characters written
+.SH BUGS
+No Known bugs.
+.SH AUTHORS
+Jeffrey Kanemitsu and Larry Madeo
