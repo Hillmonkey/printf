@@ -1,4 +1,14 @@
 #include "holberton.h"
+
+/*
+ *
+ *
+ **
+op_t *create_ops(op_t *ops)
+{
+	op_t *ops
+}
+**/
 /**
  * _printf - simple function duplicates printf functionality
  * @format: format string just like the standard printf
@@ -8,9 +18,12 @@
 
 void _printf(const char *format, ...)
 {
-	int i = 0, dex = 0, j;
 	params_t p;
-	op_t ops[] = {
+	va_list valist;
+	op_t *ops;
+
+	ops = malloc(sizeof(op_t) * NUMBER_OF_OPS);
+	*ops = {
 		{"c", op_char},
 		{"i", op_int},
 		{"%", op_percent},
@@ -18,8 +31,7 @@ void _printf(const char *format, ...)
 		/* {"s", op_string}, */
 		{NULL, NULL}
 	};
-
-	va_start valist; /* past this point, only use p->valist */
+	va_start(valist, format); /* past this point, only use p->valist */
 	init_params(&p, format, &ops, valist);
 	while (p.format[p.dex])
 	{

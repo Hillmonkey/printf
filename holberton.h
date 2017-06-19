@@ -1,8 +1,12 @@
 #ifndef HOLBERTON
 #define HOLBERTON
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
+#define UNUSED(x) (void)(x)
+/* NUMBER_OF_OPS includes terminating NULL OP */
+#define NUMBER_OF_OPS 4
 
 /**
  * struct op - Struct op
@@ -12,7 +16,7 @@
 typedef struct op
 {
 	char *op;
-	void (*f)(va_list);
+	int (*f)(va_list);
 } op_t;
 
 /**
@@ -21,6 +25,7 @@ typedef struct op
  * @format: copy of format string passed into _printf
  * @counter: number of chars printed to stdout
  * @dex: index into format string
+ * @ops: array of pointers to op_t structs
  **/
 typedef struct params
 {
@@ -28,12 +33,15 @@ typedef struct params
 	const char *format;
 	int counter;
 	int dex;
-	op_t ops[];
+	op_t *ops;
 /* TODO: passing array of op struct around definitely needs considerartion */
 /* consider this: if the array is built in main, then why not pass a pointer */
 /* around that points to the array ... it seems that this should work ... */
 
 } params_t;
+
+/* _printf.c */
+void _printf(const char *format, ...);
 
 /* op_code1.c functions */
 int op_char(va_list valist);
