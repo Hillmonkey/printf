@@ -3,20 +3,26 @@
 /**
  * _strdup - make a copy of a string
  * @src: source string
- * @dest: destination string
  * Return: a string that is a copy of the source string
- * TODO: This doesn't malloc anything, va_copy may end up replacing this func
  **/
-char *_strdup(char *src, char *dest)
+
+char *_strdup(char *src)
 {
-	char *tmp;
+	char *str;
+	char *p;
+	int len = 0;
 
-	tmp = dest;
-	while ((*dest++ = *src++))
-		;
-	return (tmp);
+	while (src[len])
+		len++;
+	str = malloc(len + 1);
+	if (!str)
+		exit(EXIT_FAILURE);
+	p = str;
+	while (*src)
+		*p++ = *src++;
+	*p = '\0';
+	return (str);
 }
-
 /**
  * init_params - initialize all elements of a param struct
  * @p: pointer to a list of parameters
