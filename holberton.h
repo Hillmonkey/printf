@@ -41,7 +41,7 @@ typedef struct params
 } params_t;
 
 /* _printf.c */
-void _printf(const char *format, ...);
+int _printf(const char *format, ...);
 
 /* op_code1.c functions */
 int op_char(va_list valist);
@@ -53,6 +53,6 @@ int op_percent(va_list valist);
 /* helper.c functions */
 int choose_op(params_t *p);
 int init_params(params_t *p, const char *format, op_t *ops[], va_list valist);
-char *_strdup(char *src, char *dest);
+char *_strdup(char *src);
 
 #endif /* HOLBERTON */
