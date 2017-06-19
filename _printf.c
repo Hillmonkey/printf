@@ -52,11 +52,17 @@ int _printf(const char *format, ...)
 		if (p.format[p.dex] == '%')
 		{
 			choose_op(&p);
+			p.dex++;
 		}
-		p.dex++;
+		else
+		{
+			_putchar(p.format[p.dex];
+			p.counter++;
+			p.dex++;
+		}
 	}
 	printf("\n");
 	va_end(valist);
 	va_end(p.valist);
-	return (666); /* should return number of printed chars */
+	return (p.dex); /* should return number of printed chars */
 }
