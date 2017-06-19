@@ -47,6 +47,10 @@ int _printf(const char *format, ...)
 	ops = create_ops(ops);
 	va_start(valist, format); /* past this point, only use p->valist */
 	init_params(&p, format, &ops, valist);
+
+	/* printf("\n%s", format); */
+	/* printf("FORMAT->%s\n", p.format); */
+
 	while (p.format[p.dex])
 	{
 		if (p.format[p.dex] == '%')
@@ -56,7 +60,9 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(p.format[p.dex];
+			/* puts("Z"); */
+			_putchar(p.format[p.dex]);
+			/* printf("ZZ%s\n", p.format[p.dex]); */
 			p.counter++;
 			p.dex++;
 		}
