@@ -4,7 +4,8 @@
 .SH SYNOPSIS
 .B printf
 .I format
-.I [arguments ...]
+.I [arguments]
+.BR ...
 .PP
 .B #include "holberton.h"
 .SH DESCRIPTION
