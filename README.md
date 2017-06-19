@@ -39,7 +39,7 @@
 	* [ ] **Prototype**: int `_printf(const char *format, ...);`
 	* [ ] Returns: the number of characters printed (excluding the null byte used to end output to strings)
 	* [ ] format is a character string. The format string is composed of zero or more directives
-	* [ ] You need to handle the following conversion sepcifiers:
+	* [ ] You need to handle the following conversion specifiers:
 		* [ ] c
 		* [ ] s
 		* [ ] %
@@ -54,7 +54,7 @@
 
 #### Mandatory ####
 
-2. **With a face like mine, I do better in print**
+2. **With a face like mine, I do better in print.**
 
 	* [ ] Create a man page for your function.
 	* [ ] File name: `man_3_printf`
