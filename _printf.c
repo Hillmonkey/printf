@@ -1,8 +1,9 @@
 #include "holberton.h"
 
-/*
- *
- *
+/**
+ * create_ops - creates dynamically allocated array of op_code structs
+ * @ops: pointer to op codes
+ * Return: pointer to array of opcodes, now populated
  **/
 op_t *create_ops(op_t *ops)
 {
@@ -10,6 +11,7 @@ op_t *create_ops(op_t *ops)
 	op_t pre_ops[] = {
 		{"c", op_char},
 		{"i", op_int},
+		{"d", op_int},
 		{"%", op_percent},
 		/* {"f", op_float}, */
 		/* {"s", op_string}, */
