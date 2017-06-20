@@ -18,7 +18,7 @@
 
 * Go to https://github.com/Hillmonkey/printf.
 * Clone the repository.
-![](https://gfycat.com/ifr/HarmfulQuaintIndianglassfish "gif")
+![](http://imgur.com/Ab6NxXs "gif")
 * Clone the respository into your terminal.
 ![](https://gfycat.com/ifr/IckyInferiorKoala)
 
