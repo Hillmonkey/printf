@@ -5,9 +5,9 @@
  * @valist: tool to grab next item out of variable length list
  * Return: Number chars sent to stdout (should be 1)
  **/
-int op_char(char c)
+int op_char(va_list valist)
 {
-	write(1, &c, 1); 
+	_putchar(va_arg(valist, int));
 	return (1);
 }
 
@@ -18,24 +18,33 @@ int op_char(char c)
  **/
 int op_int(va_list valist)
 {
-	printf("%d", va_arg(valist, int));
-	return (1); /* TODO: return proper output count */
+	int num, dex, i = 0;
+	char isNegative = FALSE;
+	char str[98];
 
-	int i;
-	int j;
-	char k;
-
-	i = va_arg(valist, int);
-	if (i < 0)
+	num = va_arg(valist, int);
+	if (num == 0)
 	{
-		write(1, &k, 1);
-		i = -i;
+		_putchar('0');
+		return (1);
 	}
-	while (i != 0)
+	if (num < 0)
 	{
-		
-}
-
+		isNegative = TRUE;
+		num = -num;
+	}
+	while (num != 0)
+	{
+		str[i++] = (num % 10) + '0';
+		num = num / 10;
+	}
+	if (isNegative)
+		str[i] = '-';
+	dex = i;
+	while (i >= 0)
+		putchar(str[i--]);
+	return (dex);
+}	
 /**
  * op_float - print output based on variadic input
  * @valist: tool to grab next item out of variable length list
@@ -68,12 +77,13 @@ int op_string(va_list valist)
 	char *str;
 	int i;
 
-	str = va_arg(valist, char*);
+	str = _strdup(va_arg(valist, char*));
 	if (str)
 	{
-		for(i = 0; i != '\0'; i++)
+		/* puts(str); */
+		for(i = 0; str[i]; i++)
 		{
-			(write(1, &str, 1));
+			_putchar(str[i]);
 		}
 		return (i - 1);
 	}
