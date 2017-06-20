@@ -68,8 +68,8 @@ int op_float(va_list valist)
  **/
 int op_percent(va_list valist)
 {
-	UNUSED(valist);
-	return (0);
+	_putchar(va_arg(valist, char*));
+	return (1);
 }
 
 /**
@@ -83,6 +83,7 @@ int op_string(va_list valist)
 	int i;
 	char *nil = "(nil)";
 
+	write(1, &nil, 5);
 	str = _strdup(va_arg(valist, char*));
 	if (str)
 	{
@@ -90,7 +91,7 @@ int op_string(va_list valist)
 			_putchar(str[i]);
 		return (i - 1);
 	}
-	write(1, nil, 5);
+	write(1, &nil, 5);
 	return (5);
 
 }
