@@ -67,7 +67,7 @@ int _printf(const char *format, ...)
 			p.dex++;
 		}
 	}
-	printf("\n");
+	/* printf("\n"); */
 	va_end(valist);
 	va_end(p.valist);
 	return (p.dex); /* should return number of printed chars */

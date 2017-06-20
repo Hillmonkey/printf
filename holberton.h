@@ -7,8 +7,8 @@
 #include <unistd.h>
 
 #define UNUSED(x) (void)(x)
-/* NUMBER_OF_OPS includes terminating NULL OP */
-#define NUMBER_OF_OPS 4
+#define TRUE 1
+#define FALSE 0
 
 /**
  * struct op - Struct op
