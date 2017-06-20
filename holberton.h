@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
+#include <unistd.h>
+
 #define UNUSED(x) (void)(x)
 /* NUMBER_OF_OPS includes terminating NULL OP */
 #define NUMBER_OF_OPS 4
@@ -51,8 +53,9 @@ int op_string(va_list valist);
 int op_percent(va_list valist);
 
 /* helper.c functions */
+int _putchar(char c);
 int choose_op(params_t *p);
 int init_params(params_t *p, const char *format, op_t *ops[], va_list valist);
-char *_strdup(char *src);
+char *_strdup(const char *src);
 
 #endif /* HOLBERTON */
