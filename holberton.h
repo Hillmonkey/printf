@@ -44,6 +44,7 @@ typedef struct params
 } params_t;
 
 /* _printf.c */
+op_t *create_ops(op_t *ops);
 int _printf(const char *format, ...);
 
 /* op_code1.c functions */
