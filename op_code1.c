@@ -19,7 +19,7 @@ int op_char(va_list valist)
 int op_int(va_list valist)
 {
 	printf("%d", va_arg(valist, int));
-	return (1); /* TODO: */
+	return (1); /* TODO: return proper output count */
 }
 
 /**
