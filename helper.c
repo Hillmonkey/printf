@@ -40,17 +40,14 @@ char *_strdup(const char *src)
  * @p: pointer to a list of parameters
  * @format: a format string that printf will work on
  * @ops: a group of pointers to operator structs
- * @valist: used for variadic function
  * Return: 0 = EXIT_SUCCESS
  **/
-int init_params(params_t *p, const char *format, op_t **ops, va_list valist)
+int init_params(params_t *p, const char *format, op_t **ops)
 {
-	UNUSED(ops);
+	p->ops = *ops;
 	p->dex = 0;
 	p->counter = 0;
 	p->format = _strdup(format);
-	va_copy(p->valist, valist);
-	/* va_start(p->valist, p->format); */
 	return (0);
 }
 /**
@@ -58,19 +55,15 @@ int init_params(params_t *p, const char *format, op_t **ops, va_list valist)
  * @p: struct of parameters
  * Return: int 0 = EXIT_SUCCESS
  **/
-int choose_op(params_t *p)
+int choose_op(params_t *p, va_list valist)
 {
 	int j = 0;
 
-	/* printf("%s", p->ops[j].op); */
 	while (p->ops[j].f)
 	{
-		puts("dud");
-		printf ("pops->%d\n", p->ops[j].op[0]);
-		printf ("pdex->%d\n", p->format[p->dex]);
 		if (p->ops[j].op[0] == p->format[p->dex])
 		{
-			p->ops[j].f(p->valist);
+			p->counter += p->ops[j].f(valist);
 			break;
 		}
 		j++;
