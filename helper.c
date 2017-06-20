@@ -53,21 +53,25 @@ int init_params(params_t *p, const char *format, op_t **ops)
 /**
  * choose_op - pick an op function and return it
  * @p: struct of parameters
+ * @valist: pointer into variadic list
  * Return: int 0 = EXIT_SUCCESS
  **/
 int choose_op(params_t *p, va_list valist)
 {
 	int j = 0;
+	int counter = 0;
 
 	while (p->ops[j].f)
 	{
 		if (p->ops[j].op[0] == p->format[p->dex])
 		{
-			p->counter += p->ops[j].f(valist);
+			counter = p->ops[j].f(valist);
+			/*printf("\ncounter = %d\n", counter); */
 			break;
 		}
 		j++;
 	}
+	counter++;
 	(p->dex)++;
-	return (0);
+	return (counter);
 }
