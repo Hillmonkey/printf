@@ -47,7 +47,7 @@ int op_int(va_list valist)
 	}
 	/* fflush(stdout); */
 	return (counter);
-}	
+}
 /**
  * op_float - print output based on variadic input
  * @valist: tool to grab next item out of variable length list
@@ -86,7 +86,7 @@ int op_string(va_list valist)
 	str = _strdup(va_arg(valist, char*));
 	if (str)
 	{
-		for(i = 0; str[i]; i++)
+		for (i = 0; str[i]; i++)
 			_putchar(str[i]);
 		return (i - 1);
 	}
