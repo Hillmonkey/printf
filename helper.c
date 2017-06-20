@@ -65,6 +65,9 @@ int choose_op(params_t *p)
 	/* printf("%s", p->ops[j].op); */
 	while (p->ops[j].f)
 	{
+		puts("dud");
+		printf ("pops->%d\n", p->ops[j].op[0]);
+		printf ("pdex->%d\n", p->format[p->dex]);
 		if (p->ops[j].op[0] == p->format[p->dex])
 		{
 			p->ops[j].f(p->valist);
