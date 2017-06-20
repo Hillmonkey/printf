@@ -31,6 +31,10 @@ op_t *create_ops(op_t *ops)
 	return (ops);
 }
 
+int free_ops(op_t *ops)
+{
+
+}
 /**
  * _printf - simple function duplicates printf functionality
  * @format: format string just like the standard printf
@@ -50,7 +54,7 @@ int _printf(const char *format, ...)
 
 	while (p.format[p.dex])
 	{
-		if (p.format[p.dex] == '%')
+		if (p.format[p.dex] == '%' && p.format[p.dex + 1])
 		{
 			p.dex++;
 			p.counter += choose_op(&p, valist);
