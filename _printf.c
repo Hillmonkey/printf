@@ -14,7 +14,7 @@ op_t *create_ops(op_t *ops)
 		{"d", op_int},
 		{"%", op_percent},
 		/* {"f", op_float}, */
-		/* {"s", op_string}, */
+		{"s", op_string},
 		{NULL, NULL}
 	};
 	while (pre_ops[len].op)
@@ -45,30 +45,23 @@ int _printf(const char *format, ...)
 	op_t *ops;
 
 	ops = create_ops(ops);
-	va_start(valist, format); /* past this point, only use p->valist */
-	init_params(&p, format, &ops, valist);
-
-	/* printf("\n%s", format); */
-	/* printf("FORMAT->%s\n", p.format); */
+	va_start(valist, format);
+	init_params(&p, format, &ops);
 
 	while (p.format[p.dex])
 	{
 		if (p.format[p.dex] == '%')
 		{
-			choose_op(&p);
 			p.dex++;
+			choose_op(&p, valist);	
 		}
 		else
 		{
-			/* puts("Z"); */
 			_putchar(p.format[p.dex]);
-			/* printf("ZZ%s\n", p.format[p.dex]); */
 			p.counter++;
 			p.dex++;
 		}
 	}
-	printf("\n");
 	va_end(valist);
-	va_end(p.valist);
 	return (p.dex); /* should return number of printed chars */
 }
