@@ -39,7 +39,8 @@ op_t *create_ops(op_t *ops)
 
 int free_ops(op_t *ops)
 {
-	;
+	UNUSED(ops);
+	return (0);
 }
 
 
