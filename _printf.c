@@ -53,7 +53,7 @@ int _printf(const char *format, ...)
 		if (p.format[p.dex] == '%')
 		{
 			p.dex++;
-			choose_op(&p, valist);	
+			p.counter += choose_op(&p, valist);
 		}
 		else
 		{
