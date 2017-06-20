@@ -18,9 +18,34 @@ int op_char(va_list valist)
  **/
 int op_int(va_list valist)
 {
-	printf("%d", va_arg(valist, int));
-	return (1); /* TODO: return proper output count */
-}
+	int num, dex, i = 0;
+	char isNegative = FALSE;
+	char str[98];
+
+	num = va_arg(valist, int);
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+	puts("I made it this far");
+	if (num < 0)
+	{
+		isNegative = TRUE;
+		num = -num;
+	}
+	while (num != 0)
+	{
+		str[i++] = (num % 10) + '0';
+		num = num / 10;
+	}
+	if (isNegative)
+		str[i] = '-';
+	dex = i;
+	while (i >= 0)
+		putchar(str[i--]);
+	return (dex);
+}	
 
 /**
  * op_float - print output based on variadic input
