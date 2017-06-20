@@ -43,9 +43,10 @@ int op_int(va_list valist)
 	while (i >= 0)
 	{
 		counter++;
-		putchar(str[i--]);
+		_putchar(str[i--]);
 	}
-	return (counter + 99999);
+	/* fflush(stdout); */
+	return (counter);
 }	
 /**
  * op_float - print output based on variadic input
@@ -54,8 +55,10 @@ int op_int(va_list valist)
  **/
 int op_float(va_list valist)
 {
-	printf("%f", va_arg(valist, double));
-	return (1); /* TODO: return proper char chount */
+	UNUSED(valist);
+	/* printf("%f", va_arg(valist, double)); */
+	fflush(stdout);
+	return (0); /* TODO: return proper char chount */
 }
 
 /**
@@ -78,6 +81,7 @@ int op_string(va_list valist)
 {
 	char *str;
 	int i;
+	char *nil = "(nil)";
 
 	str = _strdup(va_arg(valist, char*));
 	if (str)
@@ -86,7 +90,7 @@ int op_string(va_list valist)
 			_putchar(str[i]);
 		return (i - 1);
 	}
-	printf("(nil)");
+	write(1, nil, 5);
 	return (5);
 
 }
