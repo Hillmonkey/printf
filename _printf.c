@@ -31,10 +31,18 @@ op_t *create_ops(op_t *ops)
 	return (ops);
 }
 
+/**
+ * free_ops - free the array of op structs
+ * @ops: null terminated array of ops
+ * Return: int, success code
+ **/
+
 int free_ops(op_t *ops)
 {
-
+	;
 }
+
+
 /**
  * _printf - simple function duplicates printf functionality
  * @format: format string just like the standard printf
