@@ -5,9 +5,9 @@
  * @valist: tool to grab next item out of variable length list
  * Return: Number chars sent to stdout (should be 1)
  **/
-int op_char(va_list valist)
+int op_char(char c)
 {
-	printf("%c", va_arg(valist, int));
+	write(1, &c, 1); 
 	return (1);
 }
 
@@ -20,6 +20,20 @@ int op_int(va_list valist)
 {
 	printf("%d", va_arg(valist, int));
 	return (1); /* TODO: return proper output count */
+
+	int i;
+	int j;
+	char k;
+
+	i = va_arg(valist, int);
+	if (i < 0)
+	{
+		write(1, &k, 1);
+		i = -i;
+	}
+	while (i != 0)
+	{
+		
 }
 
 /**
@@ -52,14 +66,18 @@ int op_percent(va_list valist)
 int op_string(va_list valist)
 {
 	char *str;
+	int i;
 
 	str = va_arg(valist, char*);
 	if (str)
 	{
-		printf("%s", str);
-		return (1); /* TODO: return proper char count */
+		for(i = 0; i != '\0'; i++)
+		{
+			(write(1, &str, 1));
+		}
+		return (i - 1);
 	}
 	printf("(nil)");
-	return (1); /* TODO: return proper char chount */
+	return (5);
 
 }
