@@ -25,7 +25,6 @@ typedef struct op
 
 /**
  * struct params - Struct params
- * @valist: access to variable length list of variables
  * @format: copy of format string passed into _printf
  * @counter: number of chars printed to stdout
  * @dex: index into format string
@@ -37,10 +36,6 @@ typedef struct params
 	int counter;
 	int dex;
 	op_t *ops;
-/* TODO: passing array of op struct around definitely needs considerartion */
-/* consider this: if the array is built in main, then why not pass a pointer */
-/* around that points to the array ... it seems that this should work ... */
-
 } params_t;
 
 /* _printf.c */
