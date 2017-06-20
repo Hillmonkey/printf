@@ -5,13 +5,13 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
 
 #define TRUE 1
 #define FALSE 0
 #define UNUSED(x) (void)(x)
 /* NUMBER_OF_OPS includes terminating NULL OP */
 #define NUMBER_OF_OPS 4
-
 /**
  * struct op - Struct op
  * @op: printf-like operator
