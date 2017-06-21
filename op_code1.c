@@ -68,7 +68,7 @@ int op_float(va_list valist)
  **/
 int op_percent(va_list valist)
 {
-	_putchar(va_arg(valist, int));
+	_putchar('%');
 	return (1);
 }
 
