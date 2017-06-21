@@ -23,7 +23,7 @@
 
 * Go to https://github.com/Hillmonkey/printf.
 * Clone the repository.
-![]((http://imgur.com/Ab6NxXs.gif)
+![](http://imgur.com/Ab6NxXs.gif)
 * Clone the respository into your terminal.
 ![](http://imgur.com/BCHiNoy.gif)
 
@@ -75,5 +75,5 @@
 	* [ ] File name: `man_3_printf`
 
 ### Version ###
-v.01
+v.98
 
