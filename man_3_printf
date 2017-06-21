@@ -1,4 +1,4 @@
-.TH man _printf "18 June 2017" "0.01" "Jeffrey and Larry's printf project"
+.TH man _printf "18 June 2017" "0.01" "Holberton's _printf project"
 .SH NAME
 .B printf - format and print data
 .SH SYNOPSIS
