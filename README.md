@@ -4,6 +4,18 @@
 
 # 0x10. C - Printf #
 
+- [Table of Contents](#)
+		- [Team Members](#)
+		- [Description](#)
+		- [Objectives](#)
+		- [Installation](#)
+		- [Compilation](#)
+		- [Requirements](#)
+		- [Tasks](#)
+			- [Mandatory](#)
+			- [Mandatory](#)
+			- [Mandatory](#)
+		- [Version](#)
 ### Team Members ###
 * Jeffrey Kanemitsu
 	* https://github.com/jeffreykanemitsu
