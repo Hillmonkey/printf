@@ -4,8 +4,7 @@
 
 # 0x10. C - Printf #
 
-* [Table of Contents](#table-of-contents)
- 
+* [Table of Contents](#table-of-contents) 
 	* [Team Members](#team-members)	
 	* [Description](#description)
 	* [Objectives](#objectives)
