@@ -32,11 +32,13 @@
 * Understand all concepts used in order to complete this project such as: variadic functions, typedef structs, function pointers, etc.
 
 ### Installation ###
-
+* Be in the desired directory that you want this function to be in.
 * Go to https://github.com/Hillmonkey/printf.
 * Clone the repository.
+
 ![](http://imgur.com/Ab6NxXs.gif)
 * Clone the respository into your terminal.
+
 ![](http://imgur.com/BCHiNoy.gif)
 
 ### Compilation ###
