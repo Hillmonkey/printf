@@ -4,14 +4,17 @@
 
 # 0x10. C - Printf #
 
-## Table of Contents ##
-	- [Team Members](#)
-	- [Description](#)
-	- [Objectives](#)
-	- [Installation](#)
-	- [Compilation](#)
-	- [Requirements](#)
-	- [Tasks](#)
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [0x10. C - Printf](#)
+	- [Table of Contents](#)
+		- [Team Members](#)
+		- [Description](#)
+		- [Objectives](#)
+		- [Installation](#)
+		- [Compilation](#)
+		- [Requirements](#)
+		- [Tasks](#)
 			- [Mandatory](#)
 			- [Mandatory](#)
 			- [Mandatory](#)
