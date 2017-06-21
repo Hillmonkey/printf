@@ -20,9 +20,15 @@ int op_int(va_list valist)
 {
 	int num, counter = 0, i = 0;
 	char isNegative = FALSE;
-	char str[98];
+	char str[30];
+	char *min_str = "-2147483648";
 
 	num = va_arg(valist, int);
+	if (num == INT_MIN)
+	{
+		_putstr(min_str);
+		return (11);
+	}
 	if (num == 0)
 	{
 		_putchar('0');
@@ -45,7 +51,6 @@ int op_int(va_list valist)
 		counter++;
 		_putchar(str[i--]);
 	}
-	/* fflush(stdout); */
 	return (counter);
 }
 /**

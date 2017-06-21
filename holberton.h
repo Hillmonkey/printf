@@ -50,6 +50,7 @@ int op_string(va_list valist);
 int op_percent(va_list valist);
 
 /* helper.c functions */
+int _putstr(char *s);
 int _putchar(char c);
 int choose_op(params_t *p, va_list valist);
 int init_params(params_t *p, const char *format, op_t *ops[]);
