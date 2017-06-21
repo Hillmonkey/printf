@@ -68,6 +68,7 @@ int op_float(va_list valist)
  **/
 int op_percent(va_list valist)
 {
+	UNUSED(valist);
 	_putchar('%');
 	return (1);
 }
