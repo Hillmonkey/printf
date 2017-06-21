@@ -19,7 +19,8 @@ int _putchar(char c)
 int _putstr(char *s)
 {
 	int len;
-	for(len = 0; s[len]; len++)
+
+	for (len = 0; s[len]; len++)
 		_putchar(s[len]);
 	return (len);
 }
