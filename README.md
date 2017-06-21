@@ -5,13 +5,13 @@
 # 0x10. C - Printf #
 
 ## Table of Contents ##
-		- [Team Members](#)
-		- [Description](#)
-		- [Objectives](#)
-		- [Installation](#)
-		- [Compilation](#)
-		- [Requirements](#)
-		- [Tasks](#)
+	- [Team Members](#)
+	- [Description](#)
+	- [Objectives](#)
+	- [Installation](#)
+	- [Compilation](#)
+	- [Requirements](#)
+	- [Tasks](#)
 			- [Mandatory](#)
 			- [Mandatory](#)
 			- [Mandatory](#)
