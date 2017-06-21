@@ -73,7 +73,6 @@ int choose_op(params_t *p, va_list valist)
 		}
 		j++;
 	}
-	counter++;
 	(p->dex)++;
 	return (counter);
 }
