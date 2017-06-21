@@ -21,11 +21,11 @@
         
 	* [Tasks](#tasks)
         
-	  * [0](#0)
+	  * [Mandatory 0](#mandatory-0)
         
-	  * [1](#1)
+	  * [Mandatory 1](#mandatory-1)
 	
-	  * [2](#2)
+	  * [Mandatory 2](#mandatory-2)
 
 ### Team Members ###
 * Jeffrey Kanemitsu
@@ -69,7 +69,7 @@
 * [ ] Have to use own `_putchar` function
 
 ### Tasks ###
-#### Mandatory ####
+#### Mandatory 0 ####
 
 0. **I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life**
 
@@ -82,7 +82,7 @@
 		* [ ] s
 		* [ ] %
 
-#### Mandatory ####
+#### Mandatory 1 ####
 
 1. **Education is when you read the fine print. Experience is what you get if you don't.**
 
@@ -90,7 +90,7 @@
 		* [ ] d
 		* [ ] i
 
-#### Mandatory ####
+#### Mandatory 2 ####
 
 2. **With a face like mine, I do better in print.**
 
