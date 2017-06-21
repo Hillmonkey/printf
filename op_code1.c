@@ -92,7 +92,7 @@ int op_string(va_list valist)
 {
 	char *str;
 	int i;
-	char *nil = "(null)"
+	char *nil = "(null)";
 
 	str = _strdup(va_arg(valist, char*));
 	if (str)
