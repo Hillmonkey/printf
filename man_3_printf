@@ -1,4 +1,4 @@
-.TH man 2 "18 June 2017" "0.01" "Jeffrey and Larry's printf project"
+.TH man _printf "18 June 2017" "0.01" "Jeffrey and Larry's printf project"
 .SH NAME
 .B printf - format and print data
 .SH SYNOPSIS
@@ -8,22 +8,49 @@
 .BR ...
 .PP
 .B #include "holberton.h"
+.PP
+.B int op_char(va_list valist);
+.PP
+.B int op_int(va_list valist);
+.PP
+.B int op_float(va_list valist);
+.PP
+.B int op_string(va_list valist);
+.PP
+.B int op_percent(va_list valist);
+.PP
+.B int _putchar(char c);
+.PP
+.B int choose_op(params_t *p, va_list valist);
+.PP
+.B int init_params(params_t *p, const char *format, op_t *ops[]);
+.PP
+.B char *_strdup(const char *src);
 .SH DESCRIPTION
 The printf utility formats and prints its arguments. 
 .SH OPTIONS
-.B %c - prints char to standard output
+.B %c
+prints char to standard output
 .PP
-.B %s - prints string to standard output
+.B %s
+prints string to standard output
 .PP
-.B %i - prints signed integer to standard output
+.B %i
+prints signed integer to standard output
 .PP
-.B %d - prints signed decimal to standard output
+.B %d
+prints signed decimal to standard output
 .PP
-.B %r - prints revered string to standard output
+.B %r
+prints revered string to standard output
 .PP
-.B %f - prints floating-point number to standard output
+.B %f
+prints floating-point number to standard output
 .PP
-.B %n - prints the number of characters written
+.B %n
+prints the number of characters written
+.B %%
+escape sequence used for formatting the variables being passed to _printf()
 .SH BUGS
 No Known bugs.
 .SH AUTHORS
