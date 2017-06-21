@@ -67,6 +67,7 @@ int _printf(const char *format, ...)
 		{
 			p.dex++;
 			p.counter += choose_op(&p, valist);
+			/* printf("AA->%d\n", p.counter); */
 		}
 		else
 		{
@@ -76,5 +77,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (p.dex); /* should return number of printed chars */
+	return (p.counter); /* should return number of printed chars */
 }
