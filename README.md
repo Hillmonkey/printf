@@ -5,17 +5,30 @@
 # 0x10. C - Printf #
 
 ## Table of Contents ##
-	- [Team Members](#)
-	- [Description](#)
-	- [Objectives](#)
-	- [Installation](#)
-	- [Compilation](#)
-	- [Requirements](#)
-	- [Tasks](#)
-			- [Mandatory](#)
-			- [Mandatory](#)
-			- [Mandatory](#)
-		- [Version](#)
+
+* [Table of Contents](#table-of-contents)
+
+        
+	* [Team Members](#team-members)
+	
+	* [Description](#description)
+        
+	* [Objectives](#objectives)
+        
+	* [Installation](#installation)
+        
+	* [Compilation](#compilation)
+        
+	* [Requirements](#requirements)
+        
+	* [Tasks](#tasks)
+        
+	  * [Mandatory 0](#mandatory-0)
+        
+	  * [Mandatory 1](#mandatory-1)
+	
+	  * [Mandatory 2](#mandatory-2)
+
 ### Team Members ###
 * Jeffrey Kanemitsu
 	* https://github.com/jeffreykanemitsu
