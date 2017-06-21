@@ -66,8 +66,9 @@ int _printf(const char *format, ...)
 		if (p.format[p.dex] == '%' && p.format[p.dex + 1])
 		{
 			p.dex++;
+			while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
+				p.dex++;
 			p.counter += choose_op(&p, valist);
-			/* printf("AA->%d\n", p.counter); */
 		}
 		else
 		{
