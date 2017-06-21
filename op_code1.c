@@ -74,6 +74,16 @@ int op_percent(va_list valist)
 }
 
 /**
+ * op_space - spaces after initial don't count
+ * @valist: var of type va_list is accepted
+ * Return: # of characters sent to stdout
+ **/
+/* int op_space(va_list valist)
+{ 
+*/
+
+
+/**
  * op_string - print output based on variadic input
  * @valist: tool to grab next item out of variable length list
  * Return: # of chars sent to stdout
@@ -82,7 +92,7 @@ int op_string(va_list valist)
 {
 	char *str;
 	int i;
-	char *nil = "(nil)";
+	char *nil = "(null)"
 
 	str = _strdup(va_arg(valist, char*));
 	if (str)
@@ -91,7 +101,7 @@ int op_string(va_list valist)
 			_putchar(str[i]);
 		return (i - 1);
 	}
-	write(1, nil, 5);
-	return (5);
+	write(1, nil, 6);
+	return (6);
 
 }
