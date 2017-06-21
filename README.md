@@ -6,9 +6,10 @@
 
 * [Table of Contents](#table-of-contents)
 
-        * [Team Members](#team-members)
+        
+	* [Team Members](#team-members)
 	
-        * [Description](#description)
+	* [Description](#description)
         
 	* [Objectives](#objectives)
         
