@@ -13,7 +13,7 @@
 	* https://twitter.com/larmalade
 
 ### Description ###
-`_Printf` is a function that prints a string of characters.
+`_printf` is a function that prints a string of characters.
 
 ### Objectives ###
 * Create our own custom implementation of printf that is in the standard library`<stdio.h>`.
