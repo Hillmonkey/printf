@@ -18,44 +18,33 @@ int op_char(va_list valist)
  **/
 int op_int(va_list valist)
 {
+	int count;
+	char s[30];	
+	int n = va_arg(valist, int);
+
+	count = itoa(n, s); 
+	_putstr(s);
+	return (count);
+}
+/**
+int op_int(va_list valist)
+{
 	int num, counter = 0, i = 0;
 	char isNegative = FALSE;
 	char str[30];
 	char *min_str = "-2147483648";
 
 	num = va_arg(valist, int);
-	if (num == INT_MIN)
-	{
-		_putstr(min_str);
-		return (11);
-	}
-	if (num == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-	if (num < 0)
-	{
-		isNegative = TRUE;
-		num = -num;
-	}
-	while (num != 0)
-	{
-		str[i++] = (num % 10) + '0';
-		num = num / 10;
-	}
-	if (isNegative)
-		str[i] = '-';
-	while (i >= 0)
-	{
-		counter++;
-		_putchar(str[i--]);
-	}
+	counter = itoa(num, str);
 	return (counter);
 }
+**/
+
 /**
  * op_float - print output based on variadic input
- * @valist: tool to grab next item out of variable length list
+ * 
+
+@valist: tool to grab next item out of variable length list
  * Return: Number of chars sent to stdout
  **/
 int op_float(va_list valist)
