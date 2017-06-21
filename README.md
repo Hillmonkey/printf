@@ -41,6 +41,8 @@
 
 ![](http://imgur.com/BCHiNoy.gif)
 
+* Use "holberton.h" as the header file for this function in order to compile.
+
 ### Compilation ###
 * The code will be compiled using:
 `gcc -Wall -Werror -Wextra -pedantic *.c`
