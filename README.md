@@ -21,11 +21,11 @@
         
 	* [Tasks](#tasks)
         
-	  * [Mandatory 0](#mandatory-0)
+	  * [0](#0)
         
-	  * [Mandatory 1](#mandatory-1)
+	  * [1](#1)
 	
-	  * [Mandatory 2](#mandatory-2)
+	  * [2](#2)
 
 ### Team Members ###
 * Jeffrey Kanemitsu
