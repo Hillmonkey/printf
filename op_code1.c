@@ -18,35 +18,13 @@ int op_char(va_list valist)
  **/
 int op_int(va_list valist)
 {
-	int num, counter = 0, i = 0;
-	char isNegative = FALSE;
-	char str[98];
+	int count;
+	char s[30];
+	int n = va_arg(valist, int);
 
-	num = va_arg(valist, int);
-	if (num == 0)
-	{
-		_putchar('0');
-		return (1);
-	}
-	if (num < 0)
-	{
-		isNegative = TRUE;
-		num = -num;
-	}
-	while (num != 0)
-	{
-		str[i++] = (num % 10) + '0';
-		num = num / 10;
-	}
-	if (isNegative)
-		str[i] = '-';
-	while (i >= 0)
-	{
-		counter++;
-		_putchar(str[i--]);
-	}
-	/* fflush(stdout); */
-	return (counter);
+	count = itoa(n, s);
+	_putstr(s);
+	return (count);
 }
 /**
  * op_float - print output based on variadic input
