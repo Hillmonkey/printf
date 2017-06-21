@@ -7,14 +7,23 @@
 * [Table of Contents](#table-of-contents)
 
         * [Team Members](#team-members)
+	
         * [Description](#description)
-        * [Objectives](#objectives)
-        * [Installation](#installation)
-        * [Compilation](#compilation)
-        * [Requirements](#requirements)
-        * [Tasks](#tasks)
-          * [Mandatory 0](#mandatory-0)
-          * [Mandatory 1](#mandatory-1)
+        
+	* [Objectives](#objectives)
+        
+	* [Installation](#installation)
+        
+	* [Compilation](#compilation)
+        
+	* [Requirements](#requirements)
+        
+	* [Tasks](#tasks)
+        
+	  * [Mandatory 0](#mandatory-0)
+        
+	  * [Mandatory 1](#mandatory-1)
+	
 	  * [Mandatory 2](#mandatory-2)
 
 ### Team Members ###
