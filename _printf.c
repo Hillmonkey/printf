@@ -61,7 +61,7 @@ int _printf(const char *format, ...)
 	va_start(valist, format);
 	init_params(&p, format, &ops);
 
-	while (p.format[p.dex])
+	while (p.format && p.format[p.dex])
 	{
 		if (p.format[p.dex] == '%' && p.format[p.dex + 1])
 		{
