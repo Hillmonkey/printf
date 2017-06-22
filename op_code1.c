@@ -67,7 +67,8 @@ int op_string(va_list valist)
 	{
 		for (i = 0; str[i]; i++)
 			_putchar(str[i]);
-		return (i - 1);
+		/* return (i - 1); */
+		return (i);
 	}
 	write(1, nil, 6);
 	return (6);
