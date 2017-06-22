@@ -24,7 +24,8 @@ int itoa(int n, char s[])
 
 /**
  * _abs - return absolute value of int
- *
+ * @n: integer to be changed to absolute value
+ * Return: abs(n)
  **/
 int _abs(int n)
 {
