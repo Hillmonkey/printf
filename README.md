@@ -4,13 +4,44 @@
 
 # 0x10. C - Printf #
 
+* [Table of Contents](#table-of-contents) 
+	* [Team Members](#team-members)	
+	* [Description](#description)
+	* [Objectives](#objectives)
+	* [Installation](#installation)
+	* [Compilation](#compilation)
+	* [Requirements](#requirements)
+	* [Tasks](#tasks)
+	  * [Mandatory 0](#mandatory-0)
+	  * [Mandatory 1](#mandatory-1)
+	  * [Mandatory 2](#mandatory-2)
+
 ### Team Members ###
-* "Jeffrey Kanemitsu" https://github.com/jeffreykanemitsu
-* "Larry Madeo" https://github.com/Hillmonkey
+* Jeffrey Kanemitsu
+	* https://github.com/jeffreykanemitsu
+	* https://twitter.com/canofmisosoup
+* Larry Madeo
+	* https://github.com/Hillmonkey
+	* https://twitter.com/larmalade
+
+### Description ###
+`_printf` is a function that prints a string of characters.
 
 ### Objectives ###
 * Create our own custom implementation of printf that is in the standard library`<stdio.h>`.
 * Understand all concepts used in order to complete this project such as: variadic functions, typedef structs, function pointers, etc.
+
+### Installation ###
+* Be in the desired directory that you want this function to be in.
+* Go to https://github.com/Hillmonkey/printf.
+* Clone the repository.
+
+![](http://imgur.com/Ab6NxXs.gif)
+* Clone the respository into your terminal.
+
+![](http://imgur.com/BCHiNoy.gif)
+
+* Use "holberton.h" as the header file for this function in order to compile.
 
 ### Compilation ###
 * The code will be compiled using:
@@ -31,7 +62,7 @@
 * [ ] Have to use own `_putchar` function
 
 ### Tasks ###
-#### Mandatory ####
+#### Mandatory 0 ####
 
 0. **I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life**
 
@@ -44,7 +75,7 @@
 		* [ ] s
 		* [ ] %
 
-#### Mandatory ####
+#### Mandatory 1 ####
 
 1. **Education is when you read the fine print. Experience is what you get if you don't.**
 
@@ -52,7 +83,7 @@
 		* [ ] d
 		* [ ] i
 
-#### Mandatory ####
+#### Mandatory 2 ####
 
 2. **With a face like mine, I do better in print.**
 
@@ -60,4 +91,5 @@
 	* [ ] File name: `man_3_printf`
 
 ### Version ###
-v.01
+v.98
+
