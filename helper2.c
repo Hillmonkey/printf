@@ -34,3 +34,19 @@ int _abs(int n)
 	else
 		return (-n);
 }
+
+/**
+ * _strlen - return length of char string
+ * @s: string
+ * Return: length of string, -1 on fail
+ **/
+int _strlen(const char *s)
+{
+	int i;
+	
+	if (!s)
+		return (-1);
+	for (i = 0; s[i]; i++)
+		;
+	return(i);
+}
