@@ -56,6 +56,7 @@ int _printf(const char *format, ...)
 	params_t p;
 	va_list valist;
 	op_t *ops;
+	int tmp_counter;
 
 	ops = create_ops(ops);
 	va_start(valist, format);
@@ -63,12 +64,21 @@ int _printf(const char *format, ...)
 
 	while (p.format && p.format[p.dex])
 	{
-		if (p.format[p.dex] == '%' && p.format[p.dex + 1])
+		if (p.format[p.dex] == '%')
 		{
-			p.dex++;
-			while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
+			if (p.format[p.dex + 1])
+			{
 				p.dex++;
-			p.counter += choose_op(&p, valist);
+				while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
+					p.dex++;
+				tmp_counter = choose_op(&p, valist);
+				if (tmp_counter < 0)
+					return (-1);
+				else
+					p.counter += tmp_counter;
+			}
+			else
+				return (-1);
 		}
 		else
 		{
@@ -78,5 +88,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(valist);
-	return (p.counter); /* should return number of printed chars */
+	return ((p.format) ? p.counter: -1);
 }
