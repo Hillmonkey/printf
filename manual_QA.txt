@@ -1,0 +1,20 @@
+2 out of 2 points - [README.md] Does the Readme have a valid title: - There is a title AND - The title makes sense
+0 out of 2 points - [README.md] Does the readme have a valid description of the `_printf` function? What it does and how to use formating options?
+0 out of 2 points - [README.md] Does the readme show at least one example on how to use the `_printf` function?
+2 out of 2 points - [github] There should not be any temp files (*~ or #* or core or anything not used by the program) - It is ok to have a `tests` folder or anything that makes sense, but in a separate folder - it is ok to have a man page - it is ok to have a `README.md` file
+2 out of 2 points - [github] are there 2 contirbutors? - if not, the group must have a valid reason
+0 out of 2 points - [_printf] is the code clean? - no extra space allocated with malloc - no extra space with string - no unused variables or variables that are doing nothing - no horrors - etc...
+2 out of 2 points - [_printf] Pick a file and ask one student to explain the code. Ask questions about the code.
+2 out of 2 points - [_printf] Pick another file and ask the another student to explain the code. Ask questions about the code.
+10 out of 10 points - [_printf] Explain the structure and algorithm used for writing your function. Draw the chart flow on the whiteboard. interviewer: make sure you ask everyone in the group.
+2 out of 2 points - [_printf] Does the function use array of struct with pointers to function?
+2 out of 2 points - [_printf] Ask one of the student what happens when a user calls their function like this: `_printf("hello %s\n", "world");` The student should explain the behavior of the function
+2 out of 2 points - [_printf] Ask another student what happens when a user calls their function like this: `_printf("hello %s\n", "world", 1, 2, 3, 4);` The student should explain the behavior of the function. What should it print? Will it fail? Answer is: the function has no way to know that more arguments were passed, so it will just ignore them. The function will not fail. The user is responsible for calling the function the right way.
+3 out of 3 points - [man] Does the man page work?
+0 out of 1 points - [man] Is this a manual section 3?
+1 out of 1 points - [man] Does the man include a section "NAME" with the name _printf listed and a brief description of what the function does?
+0 out of 1 points - [man] Does the man include a SYNOPSIS, with the prototype of the function and the header to include to use the function?
+1 out of 1 points - [man] Does the man include a DESCRIPTION section with a description of what the function does, and the available conversion specifiers, flags, field width, precision, length modifier.
+0 out of 1 points - [man] Does the man include a RETURN VALUE section with a description
+0 out of 1 points - [man] Does the man include a EXAMPLE section with at least one example?
+1 out of 1 points - [man] Does the man include a date?

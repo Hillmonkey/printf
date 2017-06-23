@@ -1,0 +1,7 @@
+0 out of 2 points - [README.md] Does the readme have a valid description of the `_printf` function? What it does and how to use formating options?
+0 out of 2 points - [README.md] Does the readme show at least one example on how to use the `_printf` function?
+0 out of 2 points - [_printf] is the code clean? - no extra space allocated with malloc - no extra space with string - no unused variables or variables that are doing nothing - no horrors - etc...
+0 out of 1 points - [man] Is this a manual section 3?
+0 out of 1 points - [man] Does the man include a SYNOPSIS, with the prototype of the function and the header to include to use the function?
+0 out of 1 points - [man] Does the man include a RETURN VALUE section with a description
+0 out of 1 points - [man] Does the man include a EXAMPLE section with at least one example?
