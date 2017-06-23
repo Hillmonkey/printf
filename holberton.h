@@ -56,7 +56,9 @@ int choose_op(params_t *p, va_list valist);
 int init_params(params_t *p, const char *format, op_t *ops[]);
 char *_strdup(const char *src);
 
-/* math.c */
+/* helper2.c */
 int itoa(int n, char s[]);
 int _abs(int n);
+int _strlen(const char *s);
+
 #endif /* HOLBERTON */
