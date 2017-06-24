@@ -71,11 +71,16 @@ int _printf(const char *format, ...)
 				p.dex++;
 				while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
 					p.dex++;
+				if (p.format[p.dex] == NULL)
+					return (-1);
+				p.counter = choose_op(&p, valist);
+				/**
 				tmp_counter = choose_op(&p, valist);
 				if (tmp_counter < 0)
 					return (-1);
 				else
 					p.counter += tmp_counter;
+				**/
 			}
 			else
 				return (-1);
