@@ -73,17 +73,25 @@ int init_params(params_t *p, const char *format, op_t **ops)
  **/
 int choose_op(params_t *p, va_list valist)
 {
-	int j = 0;
+	int i = 0;
 	int counter = 0;
+	char no_specifier = TRUE;
 
-	while (p->ops[j].f)
+	while (p->ops[i].f)
 	{
-		if (p->ops[j].op[0] == p->format[p->dex])
+		if (p->ops[i].op[0] == p->format[p->dex])
 		{
-			counter = p->ops[j].f(valist);
+			no_specifier = FALSE;
+			counter = p->ops[i].f(valist);
 			break;
 		}
-		j++;
+		i++;
+	}
+	if (no_specifier)
+	{
+		putchar('%');
+		putchar(p->format[p->dex]);
+		counter = 2;
 	}
 	(p->dex)++;
 	return (counter);
