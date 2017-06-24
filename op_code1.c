@@ -40,7 +40,7 @@ int op_float(va_list valist)
 }
 
 /**
- * op_percent - 2nd consecutive % occurs - do nothing!
+ * op_percent - 2nd consecutive '%' occurs - do nothing!
  * @valist: var of type va_list is accepted, but nothing is done ...
  * Return: # of characters sent to stdout
  **/
