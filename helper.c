@@ -88,9 +88,9 @@ int choose_op(params_t *p, va_list valist)
 		i++;
 	}
 	if (no_specifier)
-	{
-		putchar('%');
-		putchar(p->format[p->dex]);
+	{ /* if no specifier, then just print % and char that follows ... */
+		_putchar('%');
+		_putchar(p->format[p->dex]);
 		counter = 2;
 	}
 	(p->dex)++;
