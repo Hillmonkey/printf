@@ -56,7 +56,7 @@ int _printf(const char *format, ...)
 	params_t p;
 	va_list valist;
 	op_t *ops;
-	int tmp_counter;
+	/* int tmp_counter; */
 
 	ops = create_ops(ops);
 	va_start(valist, format);
@@ -71,7 +71,7 @@ int _printf(const char *format, ...)
 				p.dex++;
 				while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
 					p.dex++;
-				if (p.format[p.dex] == NULL)
+				if (p.format[p.dex] == '\0')
 					return (-1);
 				p.counter = choose_op(&p, valist);
 				/**
