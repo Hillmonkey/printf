@@ -61,4 +61,17 @@ int itoa(int n, char s[]);
 int _abs(int n);
 int _strlen(const char *s);
 
+/* test files in TEST-FILES folder */
+int baby_test(void);
+int count_test(void);
+int day2_test(void);
+int felicia_complete_test(void);
+int felicia_test(void);
+int int_test(void);
+int still_failing(void);
+int test_test(void);
+int test_template(void);
+int tiniest_test(void);
+int tiny_test(void);
+
 #endif /* HOLBERTON */
