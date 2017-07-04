@@ -1,13 +1,13 @@
 #include <limits.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "../holberton.h"
 
 /**
  * test_template - a TEMPLATE for other printf test suites
  *
  * Return: Always 0
  */
-int main(void)
+int test_template(void)
 {
     int len;
     int len2;

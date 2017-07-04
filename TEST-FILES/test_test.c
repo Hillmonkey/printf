@@ -3,11 +3,11 @@
 #include "../holberton.h"
 
 /**
- * test_main - another test suite
+ * test_test - another test suite
  *
  * Return: Always 0
  */
-int test_main(void)
+int test_test(void)
 {
     int len;
     int len2;

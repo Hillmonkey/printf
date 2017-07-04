@@ -7,7 +7,7 @@
  *
  * Return: Always 0
  */
-int main(void)
+int day2_test(void)
 {
 	int len;
 	int len2;

@@ -7,7 +7,7 @@
  *
  * Return: Always 0
  */
-int main(void)
+int count_test(void)
 {
     int len;
     int len2;
