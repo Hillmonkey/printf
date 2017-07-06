@@ -50,3 +50,22 @@ int _strlen(const char *s)
 		;
 	return(i);
 }
+
+/**
+ * is_in_or_null - returns TRUE if char is in str or char = '\0'
+ * @c: char to test for inclusion in str
+ * @str: target string used to test c
+ * Return: char: 1 = TRUE, 0 = FALSE
+ **/
+char is_in_or_null(char c, char *str)
+
+{
+	int i;
+
+	if (c = '\0')
+		return (TRUE);
+	for (i = 0; str[i]; i++)
+		if (c == str[i])
+			return (TRUE);
+	return (FALSE);
+}

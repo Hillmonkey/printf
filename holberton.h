@@ -60,6 +60,7 @@ char *_strdup(const char *src);
 int itoa(int n, char s[]);
 int _abs(int n);
 int _strlen(const char *s);
+char is_in_or_null(char c, char *str);
 
 /* test files in TEST-FILES folder */
 int baby_test(void);
