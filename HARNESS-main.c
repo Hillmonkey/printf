@@ -12,16 +12,19 @@
 
 int main(void)
 {
+	/*
 	baby_test();
 	count_test();
 	day2_test();
 	felicia_complete_test();
 	felicia_test();
 	int_test();
+	*/
 	still_failing();
+	/*
 	test_test();
 	tiniest_test();
 	tiny_test();
-
+	*/
 	return (0);
 } 
