@@ -71,7 +71,9 @@ int _printf(const char *format, ...)
 				p.dex++;
 				while (p.format[p.dex] == ' ' && p.format[p.dex + 1])
 					p.dex++;
-				if (p.format[p.dex] == '\0')
+				/* test : \0, space, or \n */
+				/* if (p.format[p.dex] == '\0' || p.format[p.dex] == '\n') */
+				if (is_in_or_null(p.format[p.dex], " \n"));
 					return (-1);
 				p.counter = choose_op(&p, valist);
 				/**
