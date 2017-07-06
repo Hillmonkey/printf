@@ -16,9 +16,13 @@ int still_failing(void)
 	int i;
 	char *a = NULL;
 
-	/**
+	puts("TEST CASE: percent followed by junk straight to end-of-line ... everything gets printed ...");
+	puts("percent: at-pound-dollar-percent-carrat ... ");
 	len = _printf("String:1234567890 1234567890 1234567890 1234567890 qwertyuiop[]\asdfghjkl;'zxcvbnm,./`1234567890-=~!@#$%^&*()_+\{}:?><");
+	puts("");
 	len2 = printf("String:1234567890 1234567890 1234567890 1234567890 qwertyuiop[]\asdfghjkl;'zxcvbnm,./`1234567890-=~!@#$%^&*()_+\{}:?><");
+	puts("");
+
 	printf("Length:[%d]\n", len);
 	printf("Length:[%d]\n", len2);
 	puts("");
@@ -27,7 +31,6 @@ int still_failing(void)
 	printf("Length:[%d]\n", len2);
 	puts("");
  
-	**/
 	puts("triple percent");
 	len = _printf("%%%   ");
 	puts("");
@@ -46,7 +49,6 @@ int still_failing(void)
 	printf("Length:[%d]\n", len2);
 	puts("");
 
-	/**
 	puts("percent: '% % '");
 	len = _printf("% % ");
 	puts("");
@@ -67,7 +69,6 @@ int still_failing(void)
 	printf("Length:[%d]\n", len);
 	printf("Length:[%d]\n", len2);
 	puts("");
-	**/
 
 	return (0);
 }
